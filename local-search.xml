@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>shell</title>
+    <link href="/2024/10/31/sehll/"/>
+    <url>/2024/10/31/sehll/</url>
+    
+    <content type="html"><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="第二讲-shell工具和脚本"><a href="#第二讲-shell工具和脚本" class="headerlink" title="第二讲 shell工具和脚本"></a>第二讲 shell工具和脚本</h2><h3 id="1-变量定义-“foo-bar”"><a href="#1-变量定义-“foo-bar”" class="headerlink" title="1.变量定义    “foo&#x3D;bar”"></a>1.变量定义    “foo&#x3D;bar”</h3><h5 id="空格是用于分隔参数的保留字符"><a href="#空格是用于分隔参数的保留字符" class="headerlink" title="空格是用于分隔参数的保留字符"></a><strong>空格是用于分隔参数的保留字符</strong></h5><p>引用 双引号，单引号（无法替换变量）</p><h3 id="2-定义函数"><a href="#2-定义函数" class="headerlink" title="2.定义函数"></a>2.定义函数</h3><hr><p>vim 打开文件</p><p>source 在shell中创建文件</p><p>mcd 创建目录</p><p>rmdir 删除空文件</p><p>mkdir 创建文件</p><p>cd $_  返回上个命令最后一个参数</p><p>sudo !! (!!会被上跳命令取代，用于无权限操作)</p><hr><h3 id="3-标准输入流"><a href="#3-标准输入流" class="headerlink" title="3.标准输入流?"></a>3.标准输入流?</h3><hr><p>echo $?  &#x2F;&#x2F;查询错误代码的值，true&#x3D;0，false&#x3D;1</p><p>eg.   grep foobar mcd.sh &#x2F;&#x2F;在mcd脚本搜索foobar字符</p><hr><p><strong>grep：查找文件里符合条件的字符串或正则表达式</strong></p><p><a href="https://www.runoob.com/linux/linux-comm-grep.html"><a href="https://www.runoob.com/linux/linux-comm-grep.html">Linux grep 命令 | 菜鸟教程 (runoob.com)</a></a></p><hr><p>||  或运算；前者错，执行后者；前者对，不执行后者</p><p>&amp;&amp;  且运算；前者对，才执行后者</p><p>；  分号在同一行用于连接命令</p><hr><p>把命令的输出存到变量里</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">foo=$(pwd)  //打印当前目录存储到foo变量中<br>echo &quot;We are in $(pwd)&quot;  //显示当前所在目录<br></code></pre></td></tr></table></figure><hr><p>过程替换</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">cat&lt;(ls)&lt;(ls ..)<br></code></pre></td></tr></table></figure><hr>]]></content>
+    
+    
+    <categories>
+      
+      <category>shell工具和脚本</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2024/10/13/hello-world/"/>
     <url>/2024/10/13/hello-world/</url>
